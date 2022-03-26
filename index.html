@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Raleway:wght@300;800&family=Rubik&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body onload="loadPokemons()">
+    <div class="pokemonsOverContainer" id="pokemonsOverContainer">
+        <div class="title">
+            <h1>Pokedex</h1>
+        </div>
+        <div class="searchField" id="searchField">
+            <input type="text" id="search">
+            <button class="button button2" onclick="searchNames()">search</button>
+        </div>
+        <div class="pokemons" id="pokemons">
+
+            <div class="pokeContainer d-none">
+                <div class="pokeHeader">
+                    <div class="pokemonName" id="pokemonName">Name</div>
+                    <div>id<img></img></div>
+                </div>
+                <div class="pokeContainerBottom">
+                    <div class="pokeContainerBottomLeft">
+                        <div class="pokeElement">
+                            <div class="pokeElementDiv">Fire</div>
+                        </div>
+                        <div class="pokeType">Flug</div>
+                    </div>
+                    <div>
+                        <image id="pokemonPicture"></image>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="loadMoreBtn"><button class="button button2" onclick="loadMorePokemons()">Load more</button></div>
+    </div>
+    <div class="bigPokeContainer d-none" id="bigPokeContainer">
+    </div>
+    </div>
+</body>
+
+</html>

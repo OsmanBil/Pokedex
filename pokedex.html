@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Raleway:wght@300;800&family=Rubik&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+<style>
+    #pokedex{
+    min-height: 50vh;
+    background-color: rgb(163, 17, 17);
+    color: white;
+    display: flex;
+    padding: 24px;
+}
+
+.infoContainer{
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    min-height: 100px;
+    margin-top: -40px;
+}
+
+.infoContainer img{
+    margin-top: -120px;
+    width: 200px;
+}
+</style>
+
+
 </head>
-<body>
-    
+
+<body >
+    <div class="pokedex" id="pokedex">
+        <div>
+            <div class="pokemonOverContainer">
+                <div><a id="pokemonName">${bigPokemon['name']}</a></div>
+                <div class="pokemonId">
+                    <div>${bigPokemon['id']}</div>
+                </div>
+            </div>
+            <div class="pokemonElements">
+                <div>${bigPokemon['id']}</div>
+                <div>${bigPokemon['types']['0']['type']['name']}</div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="infoContainer">
+        <image id="pokemonPicture"></image>
+    </div>
+
 </body>
+
 </html>
