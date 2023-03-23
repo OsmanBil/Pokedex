@@ -1,2 +1,2 @@
 # Pokedex
-Dev Akademie example
+Dev Akademie Example
